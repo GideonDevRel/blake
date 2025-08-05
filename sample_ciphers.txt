@@ -1,0 +1,45 @@
+SAMPLE CIPHERS FOR TESTING
+==========================
+
+1. CAESAR CIPHER (Shift 3):
+Plaintext:  THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG
+Ciphertext: WKH TXLFN EURZQ IRA MXPSV RYHU WKH ODCB GRJ
+
+2. CAESAR CIPHER (Shift 13 - ROT13):
+Plaintext:  HELLO WORLD
+Ciphertext: URYYB JBEQQ
+
+3. VIGENÈRE CIPHER (Key: LEMON):
+Plaintext:  ATTACKATDAWN
+Ciphertext: LXFOPVEFRNHR
+
+4. SUBSTITUTION CIPHER (A→Z, B→Y, C→X, etc.):
+Plaintext:  THE QUICK BROWN FOX
+Ciphertext: GSV JFRXP YILDM ULC
+
+5. MONOALPHABETIC SUBSTITUTION:
+Plaintext:  MEET ME AT MIDNIGHT
+Ciphertext: PVVG PV ZG PUWMWFJG
+
+6. FREQUENCY ANALYSIS TEST:
+High-frequency text: THE THE THE AND AND OR OR TO TO A A A IS IS IT IT
+
+7. HASH COLLISION TESTS:
+Try: "apple" and "apxle" (weak hash)
+Try: Various 6-character strings for birthday attack
+
+USAGE INSTRUCTIONS:
+==================
+1. Run: python3 cryptanalysis_toolkit.py
+2. Select tool number (1-9)
+3. Paste ciphertext from above
+4. Analyze results
+
+For quick tests:
+- Tool 1: Use sample 6 for frequency analysis
+- Tool 2: Use samples 1 or 2 for Caesar breaking
+- Tool 3: Use samples 4 or 5 for substitution
+- Tool 4: Use sample 3 for Vigenère breaking
+- Tool 5: Hash collision demonstrations
+- Tool 6: Any ciphertext for identification
+- Tool 7: Any ciphertext for comprehensive analysis
